@@ -1,4 +1,5 @@
 require("trimonovds.options")
+require("trimonovds.keymaps")
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
