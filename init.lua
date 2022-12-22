@@ -21,6 +21,10 @@ require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim',
     },
   }
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+  }
   use { "ellisonleao/gruvbox.nvim" }
   use {
     'nvim-tree/nvim-tree.lua',
@@ -66,6 +70,27 @@ require("trimonovds")
 -- Set colorscheme
 vim.o.background = "light"
 vim.cmd [[colorscheme gruvbox]]
+
+-- Plugins setup
+require('nvim-treesitter.configs').setup({
+  ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "swift" }, -- put the language you want in this array
+  ignore_install = { "" }, -- List of parsers to ignore installing
+  sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
+  highlight = {
+    enable = true, -- false will disable the whole extension
+    disable = { "css" }, -- list of language that will be disabled
+  },
+  indent = { enable = true, disable = { "python", "css" } },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn", -- set to `false` to disable one of the mappings
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+})
 
 require('lualine').setup {
   options = {
