@@ -23,6 +23,9 @@ require('packer').startup(function(use)
   }
   use { "ellisonleao/gruvbox.nvim" }
   use {
+    'nvim-tree/nvim-tree.lua',
+  }
+  use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
@@ -64,6 +67,21 @@ vim.cmd [[colorscheme gruvbox]]
 require('lualine').setup {
   options = { theme = 'gruvbox' },
 }
+
+require("nvim-tree").setup({
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = { "l", "<CR>", "o" }, action = "edit", mode = "n" },
+        { key = "u", action = "dir_up" },
+        { key = "h", action = "close_node" },
+        { key = "v", action = "vsplit" },
+        { key = "C", action = "cd" },
+      },
+    },
+  },
+})
 
 -- LSP
 -- Use an on_attach function to only map the following keys
