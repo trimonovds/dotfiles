@@ -64,13 +64,13 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 require("trimonovds")
 
 -- Set colorscheme
-vim.o.background = "light" -- "dark"
+vim.o.background = "light"
 vim.cmd [[colorscheme gruvbox]]
 
 require('lualine').setup {
   options = {
     globalstatus = true,
-    theme = 'gruvbox'
+    theme = 'auto'
   },
 }
 
