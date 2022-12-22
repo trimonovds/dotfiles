@@ -1,5 +1,13 @@
 require("trimonovds.options")
 require("trimonovds.keymaps")
+require("trimonovds.lsp")
+require("trimonovds.treesitter")
+require("trimonovds.lualine")
+require("trimonovds.nvimtree")
+
+-- Set colorscheme
+vim.o.background = "light"
+vim.cmd [[colorscheme gruvbox]]
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
