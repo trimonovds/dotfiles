@@ -68,7 +68,10 @@ vim.o.background = "light" -- "dark"
 vim.cmd [[colorscheme gruvbox]]
 
 require('lualine').setup {
-  options = { theme = 'gruvbox' },
+  options = {
+    globalstatus = true,
+    theme = 'gruvbox'
+  },
 }
 
 require("nvim-tree").setup({
