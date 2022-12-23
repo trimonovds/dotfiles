@@ -65,3 +65,4 @@ vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, opts)
 
 -- NvimTree
 vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>so", "<cmd>:SymbolsOutline<cr>")

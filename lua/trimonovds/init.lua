@@ -3,7 +3,8 @@ require("trimonovds.keymaps")
 require("trimonovds.lsp")
 require("trimonovds.treesitter")
 require("trimonovds.lualine")
-require("trimonovds.nvimtree")
+require("trimonovds.nvim-tree")
+require("trimonovds.symbols-outline")
 
 -- Set colorscheme
 vim.o.background = "light"
