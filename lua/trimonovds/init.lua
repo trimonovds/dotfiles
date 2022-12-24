@@ -4,7 +4,7 @@ require("trimonovds.lsp")
 require("trimonovds.treesitter")
 require("trimonovds.lualine")
 require("trimonovds.nvim-tree")
-require("trimonovds.symbols-outline")
+require("trimonovds.comment")
 require("trimonovds.gitsigns")
 require("trimonovds.toggleterm")
 

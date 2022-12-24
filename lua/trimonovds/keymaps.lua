@@ -64,6 +64,12 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, opts)
 
+-- NvimTree
 vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
-vim.keymap.set("n", "<leader>so", "<cmd>:SymbolsOutline<cr>")
+
+-- Git
 vim.keymap.set("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>")
+
+-- Comment
+vim.keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
+vim.keymap.set("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
