@@ -23,7 +23,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<C-Up>", ":resize +2<CR>")
 vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
 
-
 -- Navigate buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
@@ -65,7 +64,6 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, opts)
 
--- NvimTree
 vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
 vim.keymap.set("n", "<leader>so", "<cmd>:SymbolsOutline<cr>")
 vim.keymap.set("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>")
