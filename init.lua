@@ -37,6 +37,7 @@ require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
+  use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
   use { 'simrat39/symbols-outline.nvim' }
 
   -- Automatically set up your configuration after cloning packer.nvim
