@@ -23,6 +23,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<C-Up>", ":resize +2<CR>")
 vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
 
+
 -- Navigate buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
@@ -32,7 +33,7 @@ vim.keymap.set("n", "<S-q>", ":bd!<CR>")
 vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>")
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 vim.keymap.set("i", "jk", "<ESC>")
 
 -- Visual --
@@ -58,7 +59,7 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv")
 
 -- Lsp
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)

@@ -5,6 +5,7 @@ require("trimonovds.treesitter")
 require("trimonovds.lualine")
 require("trimonovds.nvim-tree")
 require("trimonovds.symbols-outline")
+require("trimonovds.gitsigns")
 
 -- Set colorscheme
 vim.o.background = "light"
