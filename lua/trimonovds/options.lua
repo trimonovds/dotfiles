@@ -24,6 +24,7 @@ vim.opt.updatetime = 250
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.opt.completeopt = { "menuone", "noselect" }
 
 vim.opt.termguicolors = true
 vim.opt.showmode = false -- lualine already shows mode

@@ -7,6 +7,7 @@ require("trimonovds.nvim-tree")
 require("trimonovds.comment")
 require("trimonovds.gitsigns")
 require("trimonovds.toggleterm")
+require("trimonovds.cmp")
 
 -- Set colorscheme
 vim.o.background = "light"
