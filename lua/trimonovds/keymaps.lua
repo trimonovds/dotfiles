@@ -9,7 +9,6 @@
 --   command_mode = "c",
 
 --Remap space as leader key
-vim.keymap.set("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 
 -- Normal --
@@ -44,32 +43,15 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Move text up and down
-vim.keymap.set("v", "<A-j>", ":m .+1<CR>==")
-vim.keymap.set("v", "<A-k>", ":m .-2<CR>==")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Visual Block --
 -- Move text up and down
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv")
 vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv")
-vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv")
-vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv")
 
--- Plugins
-
--- Lsp
--- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { noremap = true, silent = true }
-vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, opts)
-
--- NvimTree
-vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
-
--- Git
-vim.keymap.set("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>")
-
--- Comment
-vim.keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
-vim.keymap.set("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+-- vim.keymap.set("x", "<leader>p", [["_dP]])
+-- vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+-- vim.keymap.set("n", "<leader>Y", [["+Y]])
+-- vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])

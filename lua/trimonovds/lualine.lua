@@ -4,3 +4,5 @@ require('lualine').setup {
     theme = 'auto'
   },
 }
+
+vim.opt.showmode = false

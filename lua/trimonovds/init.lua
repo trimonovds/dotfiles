@@ -7,11 +7,9 @@ require("trimonovds.nvim-tree")
 require("trimonovds.comment")
 require("trimonovds.gitsigns")
 require("trimonovds.toggleterm")
+require("trimonovds.colorscheme")
 require("trimonovds.cmp")
-
--- Set colorscheme
-vim.o.background = "light"
-vim.cmd [[colorscheme gruvbox]]
+require("trimonovds.comment")
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
