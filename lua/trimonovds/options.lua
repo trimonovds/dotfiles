@@ -27,3 +27,4 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 vim.opt.path = vim.opt.path + "**"
+

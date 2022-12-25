@@ -1,3 +1,7 @@
+require("trimonovds.options")
+require("trimonovds.keymaps")
+require("trimonovds.autocommands")
+
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -23,6 +27,11 @@ require('packer').startup(function(use)
       'williamboman/mason.nvim',
       'williamboman/mason-lspconfig.nvim',
     },
+  }
+  use {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.0',
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- Treesitter
@@ -96,4 +105,4 @@ vim.api.nvim_create_autocmd('BufWritePost', {
   pattern = vim.fn.expand '$MYVIMRC',
 })
 
-require("trimonovds")
+require("trimonovds.plugin-config")
