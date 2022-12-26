@@ -28,13 +28,15 @@ require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim',
     },
   }
+
+  -- Fuzzy search
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  -- Treesitter
+  -- Syntax parser
   use {
     "nvim-treesitter/nvim-treesitter",
     commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
@@ -69,12 +71,16 @@ require('packer').startup(function(use)
   -- Terminal
   use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
 
-  -- Other
+  -- Status line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+
+  -- Commenting 
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
+
+  -- Editor blankline marks
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
 
   -- Automatically set up your configuration after cloning packer.nvim
