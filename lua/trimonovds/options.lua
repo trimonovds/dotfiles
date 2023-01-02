@@ -2,6 +2,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
+vim.opt.colorcolumn = '80'
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
@@ -25,6 +26,8 @@ vim.opt.updatetime = 250
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+
+vim.opt.showtabline = 2
 
 vim.opt.path = vim.opt.path + "**"
 
