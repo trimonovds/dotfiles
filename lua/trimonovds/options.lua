@@ -27,7 +27,5 @@ vim.opt.updatetime = 250
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-vim.opt.showtabline = 2
-
 vim.opt.path = vim.opt.path + "**"
 
