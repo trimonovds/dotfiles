@@ -68,9 +68,6 @@ require('packer').startup(function(use)
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
 
-  -- Terminal
-  use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
-
   -- Status line
   use {
     'nvim-lualine/lualine.nvim',
