@@ -18,15 +18,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- Resize with arrows
-vim.keymap.set("n", "<C-Up>", ":resize +2<CR>")
-vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
-
--- Navigate buffers
-vim.keymap.set("n", "<S-l>", ":bnext<CR>")
-vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
-vim.keymap.set("n", "<S-q>", ":bd!<CR>")
-
 -- Clear highlights
 vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>")
 
