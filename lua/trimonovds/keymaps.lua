@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>")
 vim.keymap.set("i", "jk", "<ESC>")
 
 -- Visual --
--- Better past
+-- Better paste
 vim.keymap.set("v", "p", '"_dP')
 
 -- Stay in indent mode
