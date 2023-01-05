@@ -1,5 +1,6 @@
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.guicursor = ""
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = '120'
