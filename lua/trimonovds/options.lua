@@ -3,7 +3,7 @@ vim.opt.relativenumber = true
 vim.opt.guicursor = ""
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = '120'
+vim.opt.colorcolumn = '80'
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
