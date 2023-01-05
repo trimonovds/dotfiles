@@ -15,6 +15,15 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+-- Have packer use a popup window
+require('packer').init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+
 require('packer').startup(function(use)
   -- Package Manager
   use 'wbthomason/packer.nvim'
@@ -74,11 +83,16 @@ require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- Commenting 
+  -- Commenting
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
 
   -- Editor blankline marks
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
+
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
