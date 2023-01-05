@@ -8,4 +8,5 @@ require("trimonovds.plugin-config.gitsigns")
 require("trimonovds.plugin-config.colorscheme")
 require("trimonovds.plugin-config.cmp")
 require("trimonovds.plugin-config.comment")
+require("trimonovds.plugin-config.symbols-outline")
 

@@ -89,6 +89,9 @@ require('packer').startup(function(use)
   -- Editor blankline marks
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
 
+  -- Symbols outline
+  use 'simrat39/symbols-outline.nvim'
+
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
