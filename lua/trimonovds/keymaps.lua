@@ -18,6 +18,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Buffers
+vim.keymap.set("n", "<leader>bn", "<cmd>:bn<cr>")
+vim.keymap.set("n", "<leader>bp", "<cmd>:bp<cr>")
+vim.keymap.set("n", "<leader>bd", "<cmd>:bdelete<cr>")
+
 -- Clear highlights
 vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>")
 
