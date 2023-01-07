@@ -47,7 +47,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv")
 vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv")
 
-
 -- Plugins
 vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
 vim.keymap.set("n", "<leader>l", "<cmd>:NvimTreeFindFile<cr>")
