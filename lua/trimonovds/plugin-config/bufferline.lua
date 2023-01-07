@@ -20,6 +20,3 @@ require('bufferline').setup {
     always_show_bufferline = false,
   }
 }
-
-vim.keymap.set("n", "<leader>bcl", "<cmd>:BufferLineCloseLeft<cr>")
-vim.keymap.set("n", "<leader>bcr", "<cmd>:BufferLineCloseRight<cr>")

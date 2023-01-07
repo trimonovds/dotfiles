@@ -19,12 +19,12 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Buffers
-vim.keymap.set("n", "<leader>bn", "<cmd>:bn<cr>")
-vim.keymap.set("n", "<leader>bp", "<cmd>:bp<cr>")
-vim.keymap.set("n", "<leader>bd", "<cmd>:bdelete<cr>")
+vim.keymap.set("n", "<leader>bn", ":bn<cr>")
+vim.keymap.set("n", "<leader>bp", ":bp<cr>")
+vim.keymap.set("n", "<leader>bd", ":bdelete<cr>")
 
 -- Clear highlights
-vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<CR>")
 
 -- Insert --
 -- Press jk fast to exit insert mode
@@ -46,3 +46,23 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Move text up and down
 vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv")
 vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv")
+
+
+-- Plugins
+vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>l", "<cmd>:NvimTreeFindFile<cr>")
+
+vim.keymap.set("n", "<leader>ff", "<cmd>:Telescope find_files<cr>")
+vim.keymap.set("n", "<leader>fr", "<cmd>:Telescope oldfiles<cr>")
+vim.keymap.set("n", "<leader>fg", "<cmd>:Telescope live_grep<cr>")
+vim.keymap.set("n", "<leader>fs", "<cmd>:Telescope lsp_document_symbols<cr>")
+vim.keymap.set("n", "<leader>fb", "<cmd>:Telescope buffers<cr>")
+vim.keymap.set("n", "<leader>fh", "<cmd>:Telescope help_tags<cr>")
+
+vim.keymap.set("n", "<leader>s", "<cmd>:SymbolsOutline<cr>")
+
+vim.keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
+vim.keymap.set("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+
+vim.keymap.set("n", "<leader>bcl", "<cmd>:BufferLineCloseLeft<cr>")
+vim.keymap.set("n", "<leader>bcr", "<cmd>:BufferLineCloseRight<cr>")
