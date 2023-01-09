@@ -24,7 +24,7 @@ vim.keymap.set("n", "<leader>bp", ":bp<cr>")
 vim.keymap.set("n", "<leader>bd", ":bdelete<cr>")
 
 -- Clear highlights
-vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<cr>")
 
 -- Insert --
 -- Press jk fast to exit insert mode
@@ -39,29 +39,29 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Move text up and down
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<cr>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<cr>gv=gv")
 
 -- Visual Block --
 -- Move text up and down
-vim.keymap.set("x", "J", ":move '>+1<CR>gv-gv")
-vim.keymap.set("x", "K", ":move '<-2<CR>gv-gv")
+vim.keymap.set("x", "J", ":move '>+1<cr>gv-gv")
+vim.keymap.set("x", "K", ":move '<-2<cr>gv-gv")
 
 -- Plugins
-vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<cr>")
-vim.keymap.set("n", "<leader>l", "<cmd>:NvimTreeFindFile<cr>")
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>l", "<cmd>NvimTreeFindFile<cr>")
 
-vim.keymap.set("n", "<leader>ff", "<cmd>:Telescope find_files<cr>")
-vim.keymap.set("n", "<leader>fr", "<cmd>:Telescope oldfiles<cr>")
-vim.keymap.set("n", "<leader>fg", "<cmd>:Telescope live_grep<cr>")
-vim.keymap.set("n", "<leader>fs", "<cmd>:Telescope lsp_document_symbols<cr>")
-vim.keymap.set("n", "<leader>fb", "<cmd>:Telescope buffers<cr>")
-vim.keymap.set("n", "<leader>fh", "<cmd>:Telescope help_tags<cr>")
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
+vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>")
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
+vim.keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>")
+vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
-vim.keymap.set("n", "<leader>s", "<cmd>:SymbolsOutline<cr>")
+vim.keymap.set("n", "<leader>s", "<cmd>SymbolsOutline<cr>")
 
-vim.keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
-vim.keymap.set("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+vim.keymap.set("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<cr>")
+vim.keymap.set("x", "<leader>/", '<ESC><cmd>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<cr>')
 
-vim.keymap.set("n", "<leader>bcl", "<cmd>:BufferLineCloseLeft<cr>")
-vim.keymap.set("n", "<leader>bcr", "<cmd>:BufferLineCloseRight<cr>")
+vim.keymap.set("n", "<leader>bcl", "<cmd>BufferLineCloseLeft<cr>")
+vim.keymap.set("n", "<leader>bcr", "<cmd>BufferLineCloseRight<cr>")

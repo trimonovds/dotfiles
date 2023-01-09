@@ -3,8 +3,8 @@ if not status_ok then
   return
 end
 
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-if not status_ok then
+local configs_status_ok, configs = pcall(require, "nvim-treesitter.configs")
+if not configs_status_ok then
   return
 end
 
