@@ -30,6 +30,7 @@ local servers = {
   "sumneko_lua",
   "sourcekit",
   "rust_analyzer",
+  "pyright",
 }
 for _, server in pairs(servers) do
   opts = {
