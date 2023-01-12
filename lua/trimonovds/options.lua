@@ -9,8 +9,13 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+-- Case insensitive searching UNLESS /C or capital in search
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 vim.opt.smartindent = true
 vim.opt.wrap = false
+vim.opt.completeopt = 'menuone,noselect'
 
 vim.opt.swapfile = false
 vim.opt.backup = false
